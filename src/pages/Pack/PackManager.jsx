@@ -96,17 +96,6 @@ function PackScreen({ onOpen, onViewCollection, total }) {
         >
           4 random startup cards per pack
         </div>
-        <div
-          style={{
-            color: '#8cff66',
-            fontSize: 13,
-            fontWeight: 800,
-            marginTop: 10,
-            letterSpacing: 1,
-          }}
-        >
-          0.0009 SOL · Season 1: LIVE
-        </div>
       </div>
 
       <button className='btn-primary' onClick={onOpen}>

@@ -131,8 +131,7 @@ export function Merge({ cards = [], onMerge }) {
             Acquired{' '}
             <span style={{ color: cfg.color, fontWeight: 900 }}>
               {result.rarity}
-            </span>{' '}
-            {result.name}
+            </span>
           </div>
           <button
             className='btn-primary'

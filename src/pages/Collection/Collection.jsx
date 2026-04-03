@@ -19,7 +19,7 @@ export function Collection({ cards = [] }) {
         RARITY_ORDER[a.rarity] - RARITY_ORDER[b.rarity] || b.pts - a.pts,
     );
 
-  const pct = Math.round((unique / 20) * 100);
+  const pct = Math.round((unique / 16) * 100);
 
   return (
     <div style={{ padding: '32px 20px', minHeight: 'calc(100vh - 60px)' }}>
@@ -29,7 +29,7 @@ export function Collection({ cards = [] }) {
       >
         {[
           ['TOTAL CARDS', total, '#8cff66'],
-          ['UNIQUE', `${unique}/20`, '#fff'],
+          ['UNIQUE', `${unique}/16`, '#fff'],
           ['LEGENDARY', countR('LEGENDARY'), '#f59e0b'],
           ['EPIC', countR('EPIC'), '#8b5cf6'],
           ['RARE', countR('RARE'), '#3b82f6'],

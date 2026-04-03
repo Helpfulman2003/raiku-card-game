@@ -82,7 +82,8 @@ export function useInventory() {
   );
 
   const total = cards.length;
-  const unique = Object.keys(inv).filter((k) => inv[k] > 0).length;
+  const rawUnique = Object.keys(inv).filter((k) => inv[k] > 0).length;
+  const unique = Math.min(rawUnique, 16);
 
   return { cards, inv, addCards, removeCards, total, unique };
 }

@@ -132,7 +132,7 @@ function App() {
                 textShadow: '0 0 10px rgba(255,255,255,0.2)',
               }}
             >
-              {unique}/20
+              {unique}/16
             </div>
             <div
               style={{
